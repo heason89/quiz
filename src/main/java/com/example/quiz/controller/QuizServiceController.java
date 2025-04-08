@@ -41,8 +41,13 @@ public class QuizServiceController {
         return quizService.update(req);
     }
 
+    @PostMapping(value = "quiz/delete")
     public BasicRes delete(@Valid @RequestBody DeleteReq req){
+
         return quizService.delete(req);
     }
+
+
+
 }
 
